@@ -16,16 +16,15 @@
 | 1      | HR       |
 | 2      | IT       |
 | 3      | Sales    |
-
----
+```
 
 ## Queries & Solutions
 
 11. **Display employees whose names start with 'A'.**
 ```sql
 SELECT * FROM Employees
-WHERE EmpName LIKE 'A%';```
-
+WHERE EmpName LIKE 'A%';
+```
 12. **Find employees whose salary is between 45,000 and 60,000.**
 ```sql
 SELECT * FROM Employees
