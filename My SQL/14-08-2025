@@ -16,29 +16,31 @@
 | 1      | HR       |
 | 2      | IT       |
 | 3      | Sales    |
-```
+
 
 ## Queries & Solutions
 
-11. **Display employees whose names start with 'A'.**
+11. *Display employees whose names start with 'A'.*
+
 ```sql
 SELECT * FROM Employees
 WHERE EmpName LIKE 'A%';
 ```
-12. **Find employees whose salary is between 45,000 and 60,000.**
+
+12. *Find employees whose salary is between 45,000 and 60,000.*
 ```sql
 SELECT * FROM Employees
 WHERE Salary BETWEEN 45000 AND 60000;
 ```
 
-13. **Show the department name of each employee (JOIN query).**
+13. *Show the department name of each employee (JOIN query).*
 ```sql
 SELECT e.EmpName, d.DeptName
 FROM Employees e
 JOIN Departments d ON e.DeptID = d.DeptID;
 ```
 
-14. **Find the number of employees in each department.**
+14. *Find the number of employees in each department.*
 ```sql
 SELECT d.DeptName, COUNT(e.EmpID) AS EmployeeCount
 FROM Employees e
@@ -46,7 +48,7 @@ JOIN Departments d ON e.DeptID = d.DeptID
 GROUP BY d.DeptName;
 ```
 
-15. **Display all employees, including those without a department (LEFT JOIN).**
+15. *Display all employees, including those without a department (LEFT JOIN).*
 ```sql
 SELECT e.EmpName, d.DeptName
 FROM Employees e
